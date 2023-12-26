@@ -26,17 +26,47 @@ import { CiShoppingTag } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { LuDot } from "react-icons/lu";
+import Footer from "./Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { checkinDate, checkoutDate } from "../Features/Task";
+import { type } from "@testing-library/user-event/dist/type";
 
 function RoomInfo() {
     const { id } = useParams();
+    const dispatch = useDispatch();
+
     const [offer1, offer2, offer3, offer4, offer5, offer6, offer7, offer8, offer9, offer10] = slides[id].offers
     const reviews = slides[id].reviews.slice(0, 6);
-    console.log(reviews)
+    const dateRange = useSelector(state => state.dateRange)
+    const initialchkinDate = useSelector(state => state.inichkindate)
+    const initialchkoutDate = useSelector(state => state.inichkoutdate)
+    if (dateRange != null) {
+        dispatch(checkinDate(dateRange))
+        dispatch(checkoutDate(dateRange))
+    }
+
+    function countDays() {
+        let d1 = parseInt(String(initialchkinDate).substring(0, 2))
+        let d2 = parseInt(String(initialchkoutDate).substring(0, 2))
+        if (d2 > d1) return d2 - d1
+        else if (d1 >= d2) {
+            return (31 - d1) + d2
+        }
+    }
+    function getPrice() {
+        let days = countDays();
+        let price = String(slides[id].price)
+        let sprice = "";
+        for (let i = 1; i < price.length; i++) {
+            if (price.charCodeAt(i) >= 48 && price.charCodeAt(i <= 57)) sprice += price.charAt(i);
+        }
+        return parseInt(sprice) * days
+    }
     return (
         <div>
             <Headers></Headers>
             {/* container for all the content below header */}
-            <div className="px-12">
+            <div className="px-12 border-b border-gray-300 ">
                 <div className="flex flex-row justify-between mt-5">
                     <p className="text-3xl font-semibold text-slate-900">Serenic Premium views in India</p>
                     <div className="flex flex-row mt-2">
@@ -55,9 +85,9 @@ function RoomInfo() {
                     </div>
                 </div>
                 {/* container holding details of room below image carousel*/}
-                <div>
+                <div className="flex items-start gap-x-20 border-b border-gray-300">
                     {/* first container holding details of room & owner */}
-                    <div className="mt-7 mb-7">
+                    <div className="mt-7 mb-7 w-2/3">
                         <div className="border-b border-gray-300 pb-8">
                             <div className="text-2xl font-semibold">Hotel in {slides[id].location},{slides[id].country}</div>
                             <div className="flex flex-row text-gray-900">
@@ -65,9 +95,9 @@ function RoomInfo() {
                             <div className="flex flex-row mt-1"> <GoStarFill className="mt-1" /> <span className="ml-1 text-md">No reviews yet</span></div>
                         </div>
                         <div className="flex flex-row py-6 gap-5 border-b border-gray-300">
-                            <div class="w-12 h-12 rounded-full border border-gray-500"></div>
+                            <div class="w-12 h-12 rounded-full border border-gray-500" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D4D03AQEr1HnUlOj-PA/profile-displayphoto-shrink_800_800/0/1675580356248?e=2147483647&v=beta&t=PjH6FNxdOiAOJv0nVHkOxzqHxcDrqXmDahkfpCPWk1Y')", backgroundSize: '100% 100%', backgroundRepeat: "no-repeat" }}></div>
                             <div>
-                                <div className="font-semibold">Hosted by Shashwat Kapoor</div>
+                                <div className="font-semibold"  >Hosted by Shashwat Kapoor</div>
                                 <div className="text-gray-400 text-sm">5 years hosting</div>
                             </div>
                         </div>
@@ -126,8 +156,55 @@ function RoomInfo() {
                         <CalenderRoomInfo></CalenderRoomInfo>
                     </div>
                     {/* second container holding the form */}
-                    <div>
-
+                    {/* This formbox shadow is custom shadow specific only to this div, Check it in tailwind.config */}
+                    <div className="flex flex-col gap-y-2 shadow-formbox w-1/3  mt-7 mb-12 sticky top-24 rounded-md border border-gray-300 px-5 py-6">
+                        <div className="flex flex-row justify-between">
+                            <p className="text-xl font-semibold">{slides[id].price} night</p>
+                            <div className="flex flex-row">
+                                <div className="flex flex-row items-center justify-center gap-x-1 text-[14px] font-semibold">
+                                    <FaStar size={12} /><span>{slides[id].ratings}</span>
+                                </div>
+                                <div className="flex flex-row items-center justify-center text-[14px]">
+                                    <LuDot size={10} /><span className="text-gray-500">{slides[id].reviews.length} reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col border border-gray-300 rounded-lg mt-3">
+                            <div className="flex flex-row border-b border-gray-300">
+                                <div className="border-r border-gray-300 px-2 py-2 w-1/2">
+                                    <p className="text-[10px] font-bold">CHECK-INN</p>
+                                    <input type="text" value={initialchkinDate} className="w-full text-gray-500 text-[14px]"></input>
+                                </div>
+                                <div className="border-l border-gray-300 px-2 py-2 w-1/2">
+                                    <p className="text-[10px] font-bold">CHECK-OUT</p>
+                                    <input type="text" value={initialchkoutDate} className="w-full text-gray-500 text-[14px]"></input>
+                                </div>
+                            </div>
+                            <div className="px-2 py-2 w-full border-t border-gray-300">
+                                <p className="text-[10px] font-bold">GUESTS</p>
+                                <input type="number" value={"1"} className="w-full text-gray-500 text-[14px]" ></input>
+                            </div>
+                        </div>
+                        <button className="w-full border border-gray-300 h-12 mt-1 rounded-lg font-semibold text-white bg-gradient-to-r from-[#de506c] to-[#F5385D]">Reserve</button>
+                        <div className="w-full text-center text-sm font-[300]">You won't be charged yet</div>
+                        <div className="flex flex-col gap-y-3 font-[400] border-b border-gray-300 py-5">
+                            <div className="flex flex-row justify-between">
+                                <div className="underline">{slides[id].price} x {countDays()} nights</div>
+                                <div><span className="mr-1">&#x20B9;</span><span>{(getPrice()).toLocaleString()}</span></div>
+                            </div>
+                            <div className="flex flex-row justify-between">
+                                <div>Weekly stay discount</div>
+                                <div className="text-green-700"><span className="mr-1">-&#x20B9;</span><span>{(slides[id].discount).toLocaleString()}</span></div>
+                            </div>
+                            <div className="flex flex-row justify-between">
+                                <div className="underline">Cleaning fee</div>
+                                <div><span className="mr-1">&#x20B9;</span><span>{(slides[id].cleaningfee).toLocaleString()}</span></div>
+                            </div>
+                        </div>
+                        <div className="flex flex-row justify-between font-semibold mt-3">
+                            <div className="text-lg">Total before taxes</div>
+                            <div><span className="mr-1">&#x20B9;</span><span>{(getPrice() - slides[id].discount + slides[id].cleaningfee).toLocaleString()}</span></div>
+                        </div>
                     </div>
                 </div>
                 {/* Ratings and specs container */}
@@ -249,16 +326,57 @@ function RoomInfo() {
                             ))
                         }
                     </div>
-                    <button className="border border-slate-900 rounded-md w-44 h-12">Show all {slides[id].reviews.length} reviews</button>
+                    <button className="border border-slate-900 rounded-md w-44 h-12 font-semibold">Show all {slides[id].reviews.length} reviews</button>
                 </div>
                 {/* map & location container */}
-                <div>
-                        <p>Where you'll be</p>
-                        <div>
-                            map will render here
-                        </div>
+                <div className="flex flex-col gap-y-3 py-12 border-b border-gray-300">
+                    <p className="font-semibold text-2xl">Location</p>
+                    <p className="text-md font-[400]">Where you,ll be</p>
+                    <div className="mt-2">
+                        <iframe
+                            className="w-full h-[550px]"
+                            src={slides[id].locationURL}
+                            style={{}}
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div className="py-12">
+                    <p className="text-2xl font-semibold">Things to know</p>
+                    <div className="grid grid-cols-3 mt-4">
+                        <ul className="flex flex-col gap-y-3">
+                            <lh className="font-semibold">House Rules</lh>
+                            <li>Check in after 2:00 pm</li>
+                            <li>Check-out before 10:00 am</li>
+                            <li>2 guests maximum</li>
+                            <div className="flex flex-row gap-x-1">
+                                <a className="underline font-semibold">Show more </a>
+                                <span className="no-underline">&#8594;</span>
+                            </div>
+                        </ul>
+                        <ul className="flex flex-col gap-y-3">
+                            <lh className="font-semibold">Saftey & property</lh>
+                            <li>Carbon monoxide alarm not reported</li>
+                            <li>Smoke alarm not reported</li>
+                            <div className="flex flex-row gap-x-1">
+                                <a className="underline font-semibold">Show more </a>
+                                <span className="no-underline">&#8594;</span>
+                            </div>
+                        </ul>
+                        <ul className="flex flex-col gap-y-3">
+                            <lh className="font-semibold">Cancellation Policy</lh>
+                            <li>This reservation is non-refundable</li>
+                            <p className="leading-4">Review the Host’s full cancellation policy which applies even if you cancel for illness or disruptions caused by COVID-19.</p>
+                            <div className="flex flex-row gap-x-1">
+                                <a className="underline font-semibold">Show more </a>
+                                <span className="no-underline">&#8594;</span>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

@@ -40,7 +40,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -48,7 +50,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -56,7 +59,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -64,20 +68,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -90,15 +105,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44778.70829397694!2d12.246709556736414!3d45.456320402377365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eae280ee7952b%3A0x1e470b10ae85d783!2sHotel%20Paganelli!5e0!3m2!1sen!2sin!4v1703327738072!5m2!1sen!2sin",
+        discount:7819,
+        cleaningfee:1567
     },
     {
         id: 1,
@@ -142,7 +152,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -150,7 +162,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -158,7 +171,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -166,20 +180,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -192,15 +217,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56927.92222904748!2d70.85353001549132!3d26.903649366486466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3947be841f29c287%3A0xce61a5dc326bb153!2sJaisalmer%20Marriott%20Resort%20%26%20Spa!5e0!3m2!1sen!2sin!4v1703327928689!5m2!1sen!2sin",
+        discount:8976,
+        cleaningfee:2678
     },
     {
         id: 2,
@@ -243,7 +263,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -251,7 +273,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -259,7 +282,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -267,20 +291,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -293,15 +328,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52100.29688888549!2d148.99760831147432!3d-35.29930796729965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b17b3054ebfab1b%3A0x97f4faa58603ed0a!2sJamala%20Wildlife%20Lodge!5e0!3m2!1sen!2sin!4v1703327999225!5m2!1sen!2sin",
+        discount:6590,
+        cleaningfee:3074
     },
     {
         id: 3,
@@ -344,7 +374,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -352,7 +384,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -360,7 +393,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -368,20 +402,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -394,15 +439,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127000.63116309946!2d24.738242851332213!3d60.17436179875589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920b7f602ddd27%3A0x44968c0771428825!2sHotel%20Katajanokka%2C%20Helsinki%2C%20a%20Tribute%20Portfolio%20Hotel!5e0!3m2!1sen!2sin!4v1703328094116!5m2!1sen!2sin",
+        discount:9817,
+        cleaningfee:4079
     },
     {
         id: 4,
@@ -446,8 +486,8 @@ const slides = [
                 date: "5th November, 2023",
                 tripType: "group",
                 review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
-                profile:"https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
-                
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -456,7 +496,7 @@ const slides = [
                 date: "November, 2023",
                 tripType: "group",
                 review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
-                profile:"https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -465,16 +505,16 @@ const slides = [
                 date: "August, 2023",
                 tripType: "group",
                 review: "The hose was clean and spacious, really enjoyed playing billiards",
-                profile:"https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
-                country:"Doha, Qatar",
+                country: "Doha, Qatar",
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
                 review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
-                profile:"https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
@@ -483,7 +523,7 @@ const slides = [
                 date: "June, 2023",
                 tripType: "group",
                 review: "Great host and beautifully furnished house.",
-                profile:"https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
@@ -492,7 +532,7 @@ const slides = [
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard.",
-                profile:"https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
@@ -510,7 +550,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71794.36781277522!2d37.41653680801389!3d55.783270325356995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5498c232cac6b%3A0x12196e25eac5e39!2sMonArch%20Moscow%20Hotel!5e0!3m2!1sen!2sin!4v1703328218852!5m2!1sen!2sin",
+        discount:9817,
+        cleaningfee:4079
     },
     {
         id: 5,
@@ -553,7 +596,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -561,7 +606,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -569,7 +615,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -577,20 +624,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -603,15 +661,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40957.84602369692!2d14.38298929986845!3d50.08880733049044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9492b86675a1%3A0xf5941425ecaccb39!2sHotel%20Elysee!5e0!3m2!1sen!2sin!4v1703328166839!5m2!1sen!2sin",
+        discount:9817,
+        cleaningfee:4079
     },
     {
         id: 6,
@@ -654,7 +707,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -662,7 +717,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -670,7 +726,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -678,20 +735,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -704,15 +772,10 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71794.36781277522!2d37.41653680801389!3d55.783270325356995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5498c232cac6b%3A0x12196e25eac5e39!2sMonArch%20Moscow%20Hotel!5e0!3m2!1sen!2sin!4v1703328218852!5m2!1sen!2sin",
+        discount:9817,
+        cleaningfee:4079
     },
     {
         id: 7,
@@ -755,7 +818,9 @@ const slides = [
                 rating: 5,
                 date: "5th November, 2023",
                 tripType: "group",
-                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops"
+                review: "Perfect place to stay! Recommend to everyone. It’s the best villa and amazing airbnb experience ever. The host is nice and very responsive. You can get everything you need from the nearby shops",
+                profile: "https://a0.muscache.com/im/pictures/user/b480bb4c-8556-438e-878f-57209894811b.jpg?im_w=240"
+
             },
             {
                 name: "Glenn",
@@ -763,7 +828,8 @@ const slides = [
                 rating: 5,
                 date: "November, 2023",
                 tripType: "group",
-                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience"
+                review: "Tanakan is a great host - extremely responsive and helpful. Everything from check in to check out was very smooth. Villa is beautiful and very clean. Pictures are accurate. We had a nice experience",
+                profile: "https://a0.muscache.com/im/pictures/user/9fd20267-3b09-4b0d-95d7-de40d2e6d49d.jpg?im_w=240"
             },
             {
                 name: "Ruj",
@@ -771,7 +837,8 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "The hose was clean and spacious, really enjoyed playing billiards"
+                review: "The hose was clean and spacious, really enjoyed playing billiards",
+                profile: "https://a0.muscache.com/im/pictures/user/683d727b-7eee-49c5-b21d-3bd3ad34b4b8.jpg?im_w=240"
             },
             {
                 name: "Joje",
@@ -779,20 +846,31 @@ const slides = [
                 rating: 5,
                 date: "August, 2023",
                 tripType: "group",
-                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great"
+                review: "Great experience.. loved the design of the villa and the interior The pool was private and that’s great",
+                profile: "https://a0.muscache.com/im/pictures/user/e534b95d-f447-4cc2-a368-252ee13f609f.jpg?im_w=240"
             },
             {
                 name: "Napat",
                 country: "Indonesia",
-                rating: 5,
+                rating: 4,
                 date: "June, 2023",
                 tripType: "group",
-                review: "Great host and beautifully furnished house."
+                review: "Great host and beautifully furnished house.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=N&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
             },
             {
                 name: "Yoon Ki",
                 country: "China",
-                rating: 5,
+                rating: 4,
+                date: "April, 2023",
+                tripType: "group",
+                review: "Friendly landloard.",
+                profile: "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=Y&im_w=240&im_f=airbnb-cereal-medium.ttf&im_c=ffffff"
+            },
+            {
+                name: "Yoon Ki",
+                country: "China",
+                rating: 3,
                 date: "April, 2023",
                 tripType: "group",
                 review: "Friendly landloard."
@@ -805,15 +883,13 @@ const slides = [
                 tripType: "group",
                 review: "Friendly landloard."
             },
-            {
-                name: "Yoon Ki",
-                country: "China",
-                rating: 5,
-                date: "April, 2023",
-                tripType: "group",
-                review: "Friendly landloard."
-            },
-        ]
+        ],
+        locationURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71794.36781277522!2d37.41653680801389!3d55.783270325356995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5498c232cac6b%3A0x12196e25eac5e39!2sMonArch%20Moscow%20Hotel!5e0!3m2!1sen!2sin!4v1703328218852!5m2!1sen!2sin",
+        discount:9817,
+        cleaningfee:4079
     }
 ];
 export default slides;
+
+const profileURL="https://drive.google.com/drive/folders/1-FKkJKkBWR6YFUUUCLkSLcb4SnosSY3U"
+export {profileURL};

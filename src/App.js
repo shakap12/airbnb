@@ -8,15 +8,13 @@ import RoomInfo from "./Components/RoomInfo";
 function App() {
 
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index></Index>} />
-          <Route path="/home" element={<Home></Home>}></Route>
-          <Route path="/room/:id" element={<RoomInfo></RoomInfo>}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index></Index>} />
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/room/:id" element={<RoomInfo></RoomInfo>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

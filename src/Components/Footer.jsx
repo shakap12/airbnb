@@ -13,7 +13,7 @@ function Footer() {
     const [categories, setCategories] = useState(categoriesByIndex[0])
     
     return (
-        <div className="bg-gray-100 mt-[120px] pb-[20px]">
+        <div className="bg-gray-100 pb-[20px]">
             <div className="pb-10 pt-[50px] px-6 border-b border-gray-300">
                 <div className="border-b border-gray-300">
                     <p className="font-semibold text-2xl">Inspiration for future gateways</p>
