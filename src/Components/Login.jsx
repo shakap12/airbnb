@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 
 function Login() {
     return (
-        <div className="grow flex items-center justify-center ">
-            <div className="border border-gray-400 rounded-xl flex flex-col gap-4 w-2/4 sm:mt-10">
+        <div className="grow flex items-center justify-center">
+            <div className="border border-gray-400 rounded-xl flex flex-col gap-4 sm:w-screen md:w-3/4 lg:w-2/4 sm:mt-10">
                 <div className="flex items-center justify-around border-b border-gray-200 h-16 font-bold">Log in or Sign up</div>
                 <div className="p-8">
                     <h3 className="font-semibold text-2xl">Welcome to Airbnb</h3>

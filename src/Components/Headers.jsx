@@ -11,11 +11,11 @@ function Headers() {
                     <span className="font-bold text-xl text-[#F5385D]">airbnb</span>
                 </a>
                 <div className="flex justify-around gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md w-full sm:w-80">
-                    <div className="font-semibold text-sm flex items-center">Anywhere</div>
+                    <div className="font-semibold text-sm flex items-center shrink-0">Anywhere</div>
                     <div className="border-l border-gray-300"></div>
-                    <div className="font-semibold text-sm flex items-center">Any week</div>
+                    <div className="font-semibold text-sm flex items-center shrink-0">Any week</div>
                     <div className="border-l border-gray-300"></div>
-                    <div className="text-sm flex items-center text-gray-500">Add guests</div>
+                    <div className="text-sm flex items-center text-gray-500 shrink-0">Add guests</div>
                     <button className="p-2 bg-[#F5385D] rounded-full text-white ml-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-3 h-3">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
