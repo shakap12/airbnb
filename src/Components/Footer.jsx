@@ -63,7 +63,7 @@ function Footer() {
                     <span className="text-2xl"><LuDot /></span>
                     <span className="-ml-2">Terms</span>
                 </div>
-                <div>Built by <span className="font-semibold">Shashwat Kapoor</span> using <span className="font-semibold">React, Redux & Tailwind CSS</span></div>
+                <div>Built by <span className="font-semibold">Vedant Kapoor</span> using <span className="font-semibold">React, Redux & Tailwind CSS</span></div>
                 <div className="hidden lg:flex flex-row">
                     <CiGlobe className="mt-[2px] text-lg" />
                     <p className="text-md font-semibold hover:underline cursor-pointer ml-1">English (IN)</p>
